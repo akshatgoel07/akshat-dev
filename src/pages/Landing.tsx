@@ -1,5 +1,7 @@
 import Meteors from "../components/meteors";
 
+import { Link } from "react-router-dom";
+
 const Landing = () => {
 	return (
 		<div className="fixed top-0 left-0 w-full h-screen bg-black">
@@ -8,6 +10,9 @@ const Landing = () => {
 				<p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white">
 					WIP
 				</p>
+				<button>
+					<Link to="/logos">Blogs</Link>
+				</button>
 			</div>
 		</div>
 	);
