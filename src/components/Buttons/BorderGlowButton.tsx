@@ -46,7 +46,7 @@ const BorderGlowButton = () => {
 				}
 			></span>
 			<div
-				className="flex gap-2 relative z-10 m-[1px] rounded-[calc(0.5rem-1px)] bg-[#09090B]  px-4 py-1 text-sm text-[#EDEDED] backdrop-blur-sm
+				className="flex gap-2 relative z-10 m-[1px] rounded-[calc(0.5rem-1px)] bg-[#ffffff]  px-4 py-1 text-sm text-[#3B3D41] backdrop-blur-sm
             "
 			>
 				<img src={Ellipse} alt="" />
