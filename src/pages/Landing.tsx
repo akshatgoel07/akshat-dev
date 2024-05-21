@@ -8,11 +8,10 @@ const Landing = () => {
 			<div className=" relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg bg-background p-20 md:shadow-xl">
 				<Meteors number={30} />
 				<p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white">
-					WIP
+					<button>
+						<Link to="/logos">WIP</Link>
+					</button>
 				</p>
-				<button>
-					<Link to="/logos">Blogs</Link>
-				</button>
 			</div>
 		</div>
 	);
