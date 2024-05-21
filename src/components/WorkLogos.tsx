@@ -1,4 +1,4 @@
-import TechKareer from "../assets/techkareer.svg";
+import TechKareer from "../assets/kareer.svg";
 import Leapflow from "../assets/leapflow.svg";
 import sabina from "../assets/sabina.svg";
 
