@@ -1,5 +1,5 @@
-import Head from "../components/Head-Logos";
-import What from "../components/Work-Logos";
+import Head from "../components/HeadLogos";
+import What from "../components/WorkLogos";
 import Footer from "../components/Footer";
 
 const Logos = () => {
