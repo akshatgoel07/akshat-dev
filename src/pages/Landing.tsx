@@ -57,22 +57,25 @@ const Landing = () => {
 						<p className="text-sm mt-2">
 							Check out some things I coded on{" "}
 							<a
+								target="_blank"
 								href="https://github.com/akshatgoel07"
-								className="underline target-blank"
+								className="underline"
 							>
 								GitHub
 							</a>{" "}
 							or view my latest thoughts on{" "}
 							<a
-								href="https://github.com/akshatgoel07"
-								className="underline target-blank"
+								target="_blank"
+								href="https://x.com/akshatgoel0"
+								className="underline"
 							>
 								Twitter
 							</a>{" "}
 							also you can find my professional experience on{" "}
 							<a
-								href="https://github.com/akshatgoel07"
-								className="underline target-blank"
+								target="_blank"
+								href="https://www.linkedin.com/in/akshatgoel7"
+								className="underline"
 							>
 								Linkedin
 							</a>{" "}
