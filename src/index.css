@@ -5,3 +5,11 @@
 
 
 
+@font-face {
+    font-family: 'Switzer-Variable';
+    src: url(./fonts/Switzer-Variable.woff) format("truetype");
+  }
+
+*{
+    font-family: 'Switzer-Variable';
+}

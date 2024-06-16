@@ -1,60 +1,54 @@
+import { Link } from "react-router-dom";
 import akLogo from "../assets/akLogo.svg";
 
 const Landing = () => {
-	interface DataItem {
-		title: string;
-		description: string;
-	}
-	const dataList: DataItem[] = [
-		{ title: "Projects", description: "Experiments with design and dev" },
-		{
-			title: "Showcase",
-			description: "Carousel of my work ",
-		},
-		{
-			title: "Notes",
-			description: "Personal notes",
-		},
-		// Add more data objects as needed
-	];
 	return (
-		<div className="flex justify-center  h-screen mt-20">
-			<div className="lg:w-2/5 md:w-3/6 sm:w-4/6  p-4 ">
-				<img src={akLogo} alt="" />
-				<p className="mt-10 text-lg">Akshat Goel</p>
-				<p className="mt-2 text-sm text	-[#5C5C5C] font-light">
-					Engineer & Designer
-				</p>
-				<div className="text-base text-[#272727]">
-					<p className="mt-10 ">
-						Hi, hello, Konnichiwa. Im Akshat goel a software
-						engineer.
+		<div className="flex justify-center  h-screen mt-10">
+			<div className="lg:w-3/6 md:w-3/6 sm:w-4/6  p-4 ">
+				<img src={akLogo} alt="logo" />
+				<p className="mt-5 text-lg">Akshat Goel</p>
+				<p className="mt-1   text-[#5C5C5C]">Engineer & Designer</p>
+				<div className="  text-[#5C5C5C] ">
+					<p className="mt-8 ">
+						Hi there, I'm{" "}
+						<span className="text-[#000000] ">Akshat</span> a
+						software engineer and designer, I'm Interested in
+						working at the intersection of{" "}
+						<span className="text-[#000000] font-base	">
+							{" "}
+							design and code{" "}
+						</span>
+						weather it be from{" "}
+						<span className="text-[#000000] ">
+							{" "}
+							user interfaces, software development
+						</span>{" "}
+						(ai/ml, web2, web3).
 					</p>
-					{/* <p className="mt-2">
-						Crafting interfaces and building softwares.
-					</p> */}
-					<p className="mt-2 text-light">
-						Interested in working at the intersection of design and
-						development weather it be from user interfaces, motion
-						design or software dev.
+					<p className="mt-1">
+						Note: showcase and notes section is work in progress
 					</p>
+					<p className="mt-2 text-light"></p>
 				</div>
-				<div className="mt-20 cursor-pointer">
-					{dataList.map((dataItem) => (
-						<div key={dataItem.title} className="mt-10">
-							<p className="text-base font-medium">
-								{dataItem.title}
+				{/* <div className="">add projects grid here </div> */}
+				<div className="mt-20">
+					<div className="h-auto w-[200px]">
+						<Link to="/showcase">
+							<p className="  font-medium underline leading-8 ">
+								Showcase
 							</p>
-							<p className="font-light text-sm">
-								{dataItem.description}
-							</p>
-						</div>
-					))}
+							<p className="text-sm">Carousel of my work</p>
+						</Link>
+					</div>
+					<div className="mt-10">
+						<p className="  font-medium">Notes</p>
+						<p className="font-light text-sm">Personal notes</p>
+					</div>
 				</div>
 				<div className="mt-20">
 					<div className="mt-2">
-						<p className="text-base ">Elseware</p>
-						<p className="text-sm mt-2">
+						<p className="  ">Elseware</p>
+						<p className="  mt-2">
 							Check out some things I coded on{" "}
 							<a
 								target="_blank"
@@ -83,26 +77,47 @@ const Landing = () => {
 						</p>
 					</div>
 					<div className="mt-10">
-						<p className="text-base ">Motion</p>
-						<p className="text-sm mt-2">
+						<p className="  ">Motion</p>
+						<p className="  mt-2">
 							Apart from working as a software developer, I also
-							enjoy the process of motion design, I have worked
-							with brands to create motion for an audience of over
-							100 Million.
+							enjoy the process of
+							<span className="text-[#000000] font-base">
+								{" "}
+								motion design
+							</span>
+							, I have worked with brands to create motion for an
+							audience of over
+							<span className="text-[#000000] font-base">
+								100 Million.
+							</span>
 						</p>
 					</div>
 					<div className="mt-10">
-						<p className="text-base ">Opportunity</p>
-						<p className="text-sm mt-2">
+						<p className="  ">Opportunity</p>
+						<p className="  mt-2">
 							If you have any opportunity that might excite me
-							reach me out akshathg7@gmail.com or schedule a call
-							here .
+							reach me out akshathg7@gmail.com or dm me on{" "}
+							<a
+								target="_blank"
+								href="https://x.com/akshatgoel0"
+								className="underline"
+							>
+								Twitter
+							</a>{" "}
 						</p>
 					</div>
 				</div>
 				<div className="flex mt-20 justify-between text-sm">
 					<p>Embrace Boredom</p>
-					<p>ak/site</p>
+					<p>
+						<a
+							target="_blank"
+							href="https://github.com/akshatgoel07/akshat-dev"
+							className="underline"
+						>
+							ak/site
+						</a>
+					</p>
 				</div>
 				<div className="h-10"></div>
 			</div>
