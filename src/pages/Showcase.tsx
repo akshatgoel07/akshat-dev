@@ -1,3 +1,4 @@
+import React from "react";
 import leapflow from "../assets/leapflow.svg";
 import moodDetection from "../assets/moodDetection.svg";
 import macStudio from "../assets/macStudio.jpg";
@@ -11,8 +12,14 @@ import syntax from "../assets/syntax.svg";
 import ak from "../assets/ak.svg";
 import techkareer from "../assets/techK.svg";
 
-const Showcase = () => {
-	const showcaseItems = [
+const Showcase: React.FC = () => {
+	interface ShowcaseItem {
+		name: string;
+		year: string;
+		img: string;
+	}
+
+	const showcaseItems: ShowcaseItem[] = [
 		{
 			name: "Emotion Detection App",
 			year: "2023",
@@ -38,7 +45,6 @@ const Showcase = () => {
 			year: "2024",
 			img: ak,
 		},
-
 		{
 			name: "TCP Server",
 			year: "2024",
@@ -76,7 +82,8 @@ const Showcase = () => {
 		},
 	];
 
-	const columns = [[], [], []];
+	const columns: ShowcaseItem[][] = [[], [], []];
+
 	showcaseItems.forEach((item, index) => {
 		columns[index % 3].push(item);
 	});
