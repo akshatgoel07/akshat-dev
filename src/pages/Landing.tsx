@@ -3,8 +3,9 @@ import akLogo from "../assets/akLogo.svg";
 
 const Landing = () => {
 	return (
-		<div className="flex justify-center  h-screen mt-10">
-			<div className="lg:w-3/6 md:w-3/6 sm:w-4/6  p-4 ">
+		<div className="flex justify-center h-screen mt-10">
+			{/* <div className="lg:  md:w-[650px] sm:w-[550px]"> */}
+			<div className="w-full md:w-[650px] p-4">
 				<img src={akLogo} alt="logo" />
 				<p className="mt-5 text-lg">Akshat Goel</p>
 				<p className="mt-1   text-[#5C5C5C]">Engineer & Designer</p>
@@ -25,17 +26,15 @@ const Landing = () => {
 						</span>{" "}
 						(ai/ml, web2, web3).
 					</p>
-					<p className="mt-1">
+					{/* <p className="mt-1">
 						Note: showcase and notes section is work in progress
-					</p>
-					<p className="mt-2 text-light"></p>
+					</p> */}
 				</div>
-				{/* <div className="">add projects grid here </div> */}
-				<div className="mt-20">
+				<div className="mt-10">
 					<div className="h-auto w-[200px]">
 						<Link to="/showcase">
 							<p className="  font-medium underline leading-8 ">
-								Showcase
+								Projects
 							</p>
 							<p className="text-sm">Carousel of my work</p>
 						</Link>

@@ -1,6 +1,5 @@
-import TechKareer from "../assets/kareer.svg";
+import TechKareer from "../assets/techkareer.svg";
 import Leapflow from "../assets/leapflow.svg";
-import sabina from "../assets/sabina.svg";
 import ak from "../assets/ak.svg";
 
 const What = () => {
@@ -55,9 +54,9 @@ const What = () => {
 				className="
                 flex justify-center mt-16 border rounded-lg"
 			>
-				<div className="flex justify-center items-center">
+				{/* <div className="flex justify-center items-center">
 					<img src={sabina} alt="" />
-				</div>
+				</div> */}
 			</div>
 			<p className="text-sm mt-8">
 				Brand identity for a design & arts student friend from Slovakia
