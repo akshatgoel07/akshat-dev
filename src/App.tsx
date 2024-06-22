@@ -5,9 +5,12 @@ import Logos from "./pages/Logos";
 import Landing from "./pages/Landing";
 import Showcase from "./pages/Showcase";
 
+import SEO from "./components/SEO";
+
 function App() {
 	return (
 		<BrowserRouter>
+			<SEO />
 			<Routes>
 				<Route path="/" element={<Landing />} />
 				<Route path="logos" element={<Logos />} />
