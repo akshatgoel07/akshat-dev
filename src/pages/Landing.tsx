@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import akLogo from "../assets/akLogo.svg";
 
-const COLORS = {
-	TEXT_GRAY: "#5C5C5C",
-	TEXT_BLACK: "#000000",
-};
-
 const containerVariants = {
 	hidden: { opacity: 0, y: 20 },
 	visible: {
